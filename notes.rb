@@ -17,6 +17,7 @@ class String
   def count_sentences
     count = []
     count << self.split(/!|[?]|[.]/)
+    #([!\b]|[?\b]|[.\b]|[..\b]|[??\b]|[!!\b]|[...\b])
     count.flatten.length 
   end
 end
