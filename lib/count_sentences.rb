@@ -18,6 +18,7 @@ class String
     count = []
     count << self.split(/[!+\b]|[?+\b]|[.+\b]/)
     binding.pry
-    count.flatten.length 
+    new_count = (count.flatten -= [nil, ""])
+    new_count.flatten.length 
   end
 end
